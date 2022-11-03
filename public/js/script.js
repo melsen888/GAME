@@ -1,5 +1,5 @@
 var diesel = new Audio ('/public/sound/diesel.mp3')
-var off = new Audio ('/public/sound/off.mp3')
+var stop = new Audio ('/public/sound/stop.mp3')
 
 function main(task){
     if (task == 'play'){
@@ -16,7 +16,7 @@ function main(task){
             var s = checkSecond((timeArray[1] - 1 ));
             if (s==3){m=m-1}
             if (s == 0 && mm == 0 ){
-                off.play();
+                stop.play();
             }
         }
         while (diesel.loop == true)
