@@ -12,13 +12,11 @@ function main(task){
         do {
             diesel.loop = false;
             var timeArray = presentTime.split(/[:]+/);
-            var m = timeArray[0]
+            var m = timeArray[0];
             var s = checkSecond((timeArray[1] - 1 ));
-            if (s==59){m=m-1}
+            if (s==3){m=m-1}
             if (s == 0 && mm == 0 ){
-                do {
-                    off.play();
-                }
+                off.play();
             }
         }
         while (diesel.loop == true)
