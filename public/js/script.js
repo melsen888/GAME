@@ -11,13 +11,14 @@ function main(task){
         // stop car 
         do {
             diesel.loop = false;
-            var start = 1000;
-            var time = 17000;
-            if (diesel.loop == false){
+            var timeArray = presentTime.split(/[:]+/);
+            var m = timeArray[0]
+            var s = checkSecond((timeArray[1] - 1 ));
+            if (s==59){m=m-1}
+            if (s == 0 && mm == 0 ){
                 do {
                     off.play();
                 }
-                while (setTimeout, 3)
             }
         }
         while (diesel.loop == true)
