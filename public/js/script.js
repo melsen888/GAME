@@ -5,10 +5,14 @@ function main(task){
     if (task == 'play'){
         diesel.loop = true;
         diesel.play();       
-    
+        document.getElementById('play').style.backgroundImage = 'url(/public/img/road.gif)'
+        document.getElementById('play').style.backgroundRepeat = "no-repeat";
+        document.getElementById('play').style.backgroundPosition = "left";
+        document.getElementById('play').style.backgroundSize = "60%";
     }
     if (task == 'stop'){
         // stop car 
+        // freeze Gif :D
         do {
             diesel.loop = false;
             var timeArray = presentTime.split(/[:]+/);
